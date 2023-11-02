@@ -41,4 +41,4 @@ test: ## Run all unit tests locally.
 	@poetry run python -m pytest -s .
 
 start: ## Run the project locally
-	@poetry run zero_step_ml
+	@poetry run python
