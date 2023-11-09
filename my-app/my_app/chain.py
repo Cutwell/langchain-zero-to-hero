@@ -1,15 +1,8 @@
 from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate
+from langchain import hub
 
-_prompt = ChatPromptTemplate.from_messages(
-    [
-        (
-            "system",
-            "You are a helpful assistant who speaks like a pirate",
-        ),
-        ("human", "{text}"),
-    ]
-)
+
+_prompt = hub.pull("cutwell/best-pirate-ever")
 _model = ChatOpenAI()
 
 # if you update this, you MUST also update ../pyproject.toml
