@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "my-app"
+name = "pirate-assistant"
 version = "0.0.1"
 description = ""
 authors = []
@@ -14,10 +14,9 @@ openai = "^0.28.1"
 langchain-cli = ">=0.0.4"
 fastapi = "^0.104.0"
 sse-starlette = "^1.6.5"
-pytest = "^7.4.3"
 
 [tool.langserve]
-export_module = "my_app"
+export_module = "pirate_assistant"
 export_attr = "chain"
 
 [build-system]

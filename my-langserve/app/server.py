@@ -1,10 +1,10 @@
 from fastapi import FastAPI
 from langserve import add_routes
-from my_app.chain import chain as my_app_chain
+from pirate_assistant.chain import chain as pirate_assistant_chain
 
 app = FastAPI()
 
-add_routes(app, my_app_chain, path="/my-app")
+add_routes(app, pirate_assistant_chain, path="/pirate")
 
 if __name__ == "__main__":
     import uvicorn

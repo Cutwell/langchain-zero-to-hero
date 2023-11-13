@@ -1,4 +1,4 @@
-# my-app
+# pirate-assistant
 
 TODO: What does this package do
 
@@ -17,20 +17,20 @@ pip install -U "langchain-cli[serve]"
 To create a new LangChain project and install this as the only package, you can do:
 
 ```shell
-langchain app new my-app --package my-app
+langchain app new my-app --package pirate-assistant
 ```
 
 If you want to add this to an existing project, you can just run:
 
 ```shell
-langchain app add my-app
+langchain app add pirate-assistant
 ```
 
 And add the following code to your `server.py` file:
 ```python
-from my_app import chain as my_app_chain
+from pirate_assistant import chain as pirate_assistant_chain
 
-add_routes(app, my_app_chain, path="/my-app")
+add_routes(app, pirate_assistant_chain, path="/pirate-assistant")
 ```
 
 (Optional) Let's now configure LangSmith. 
@@ -55,12 +55,12 @@ This will start the FastAPI app with a server is running locally at
 [http://localhost:8000](http://localhost:8000)
 
 We can see all templates at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-We can access the playground at [http://127.0.0.1:8000/my-app/playground](http://127.0.0.1:8000/my-app/playground)  
+We can access the playground at [http://127.0.0.1:8000/pirate-assistant/playground](http://127.0.0.1:8000/pirate-assistant/playground)  
 
 We can access the template from code with:
 
 ```python
 from langserve.client import RemoteRunnable
 
-runnable = RemoteRunnable("http://localhost:8000/my-app")
+runnable = RemoteRunnable("http://localhost:8000/pirate-assistant")
 ```

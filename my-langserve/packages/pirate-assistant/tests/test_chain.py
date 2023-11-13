@@ -1,4 +1,4 @@
-from my_app.chain import chain
+from pirate_assistant.chain import chain
 import langsmith
 from datetime import datetime
 
