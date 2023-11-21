@@ -1,8 +1,6 @@
 # 👑🦜 LangChain Zero-to-Hero
  Learn the complete LangChain tech stack in 1 project.
 
-![](langchain_zero_to_hero.png)
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![PyTests](https://github.com/Cutwell/zero-step-ml/actions/workflows/pytest-with-poetry.yaml/badge.svg)
 ![Pre-commit](https://github.com/Cutwell/zero-step-ml/actions/workflows/pre-commit.yaml/badge.svg)
